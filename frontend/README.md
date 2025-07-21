@@ -18,7 +18,7 @@ Frontend for IronEye - An AI-powered air-to-surface classification system using 
 - [Tailwind CSS](https://tailwindcss.com/) 
 - [TypeScript](https://www.typescriptlang.org/) 
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 frontend/
@@ -44,22 +44,21 @@ frontend/
 ### Prerequisites
 
 - Node.js 18+
-- npm or yarn
+- npm 
 - Supabase project with database schema
 
 ### Installation
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/iron-eye.git
+git clone https://github.com/CubeStar1/iron-eye.git
 cd iron-eye/frontend
 ```
 
 2. Install dependencies
 ```bash
 npm install
-# or
-yarn install
+
 ```
 
 3. Set up environment variables
@@ -68,8 +67,7 @@ Copy `.env.example` to `.env.local` and update with your Supabase credentials an
 4. Start the development server
 ```bash
 npm run dev
-# or
-yarn dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
