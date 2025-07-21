@@ -1,3 +1,6 @@
 venv
 .env
 yolov8m.pt
+dataset
+datasets
+runs

@@ -50,6 +50,10 @@
 ### Simulation
 - War Thunder
 
+## Dataset
+
+- Custom Dataset collected using War Thunder for simulation [Dataset Link](https://www.kaggle.com/datasets/iavinash/war-thunder-dataset)
+
 
 ## Project Structure
 
@@ -58,6 +62,7 @@ iron-eye/
 ├── frontend/          # Next.js frontend application
 ├── backend/           # FastAPI backend service
 ├── mcp-server/        # MCP server for simulation control
+├── model-training/    # Model training
 ```
 
 ## Getting Started
@@ -104,8 +109,8 @@ iron-eye/
    - Create a Supabase account and create a new project
    - Copy the migration in frontend/lib/supabase/migrations/ to the SQL editor in Supabase and run it
    - Get the Supabase URL and Supabase Admin key
-    
 
+    
 ### Running the Application
 
 1. **Start the backend**
@@ -180,6 +185,18 @@ iron-eye/
 3. **Image Fusion**: Combines RGB edge information with IR data
 4. **Object Detection**: Uses YOLOv8 to detect and classify objects in the fused imagery
 5. **Real-time Control**: Enables LLM-assisted control of the simulation environment using a Windows MCP Server. Allows the user to perform actions in the simulation environment using natural language such as "Move to the left, lock on to a target, fire"
+
+
+## Model Training
+
+- The model was trained using the custom dataset collected using War Thunder for simulation. The dataset was annotated using the YOLOv8 tool.
+- To train the model, run the training script in the model-training directory:
+
+   ```bash
+   cd model-training
+   python training.py
+   ```
+- The model will be saved in the model-training directory as `yolov8n-custom-run.pt` in the `runs` directory.
 
 ## Citation
 
