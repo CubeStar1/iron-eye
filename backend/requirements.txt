@@ -1,0 +1,10 @@
+supabase
+fastapi
+websockets
+python-multipart
+pydantic
+uvicorn
+python-dotenv
+pyautogui
+opencv-python
+ultralytics
