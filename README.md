@@ -50,7 +50,7 @@
 ### Simulation
 - War Thunder
 
-## Dataset
+### Dataset
 
 - Custom Dataset collected using War Thunder for simulation [Dataset Link](https://www.kaggle.com/datasets/iavinash/war-thunder-dataset)
 
@@ -201,6 +201,5 @@ iron-eye/
 ## Citation
 
 - Windows MCP (https://github.com/CursorTouch/Windows-MCP)
-```
 
 
