@@ -1,53 +1,82 @@
-# Next.js Supabase Template
+# IronEye Frontend
 
-A modern full-stack template featuring Next.js 15, Supabase, Shadcn UI, and Tailwind CSS. This template provides a robust starting point for building full-stack applications with authentication and database integration.
+Frontend for IronEye - An AI-powered air-to-surface classification system using RGB-IR fusion for military object detection. This Next.js application provides a real-time dashboard for monitoring and controlling the system.
+
+## Features
+
+- **Real-time Video Streaming**: Monitor synchronized RGB and IR video feeds
+- **Object Classification**: View detected military objects (tanks, vehicles, ships) with confidence scores
+- **AI-Powered Chat**: Natural language interface for system control and querying
+- **MCP Integration**: Control War Thunder simulation via MCP server
+- **Analytics Dashboard**: View detection statistics and system performance metrics
 
 ## Tech Stack
 
-- [Next.js 15](https://nextjs.org/) - React framework
-- [Supabase](https://supabase.com/) - Open source Firebase alternative
-- [Shadcn UI](https://ui.shadcn.com/) - Re-usable components built with Radix UI and Tailwind CSS
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Next.js 15](https://nextjs.org/) 
+- [Supabase](https://supabase.com/) 
+- [Shadcn UI](https://ui.shadcn.com/) 
+- [Tailwind CSS](https://tailwindcss.com/) 
 - [TypeScript](https://www.typescriptlang.org/) 
+
+## 🏗️ Project Structure
+
+```
+frontend/
+├── app/                  # Next.js 15 App Router
+│   ├── api/             # API routes
+│   ├── chat/            # AI chat interface
+│   └── dashboard/       # Main dashboard pages
+├── components/          # Reusable UI components
+│   ├── landing/         # Landing page components
+│   ├── dashboard/       # Dashboard components
+│   └── supaauth/        # Authentication components
+├── lib/                 # Utility functions and configs
+│   ├── supabase/        # Supabase client and utilities
+│   └── ai/              # AI-related utilities
+├── public/              # Static assets
+│   ├── images/          # Image assets
+│   └── videos/          # Sample video assets
+└── types/               # TypeScript type definitions
+```
 
 ## Getting Started
 
-1. Clone this repository
-2. Install dependencies:
+### Prerequisites
 
+- Node.js 18+
+- npm or yarn
+- Supabase project with database schema
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/iron-eye.git
+cd iron-eye/frontend
+```
+
+2. Install dependencies
 ```bash
 npm install
-
+# or
+yarn install
 ```
 
-3. Create a Supabase project and get your credentials
-4. Copy `.env.example` to `.env.local` and fill in your Supabase credentials
-5. Run the development server:
+3. Set up environment variables
+Copy `.env.example` to `.env.local` and update with your Supabase credentials and API keys.
 
+4. Start the development server
 ```bash
 npm run dev
+# or
+yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Project Structure
+## Build for Production
 
-The project follows the Next.js 14 App Router structure:
-
-- `app/` - Contains all pages and API routes
-- `components/` - Reusable UI components
-- `lib/` - Utility functions and configurations
-- `types/` - TypeScript type definitions
-
-## Learn More
-
-To learn more about the technologies used in this template:
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Supabase Documentation](https://supabase.com/docs)
-- [Shadcn UI Documentation](https://ui.shadcn.com)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new). Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm start
+```

@@ -1,6 +1,6 @@
 # IronEye - AI-Powered EO/IR Vision System
 
-- IronEye is an advanced vision system that enhances infrared (IR) image classification by fusing RGB edge detection with IR imagery.
+- IronEye is an AI-powered air-to-surface classification system using RGB-IR fusion for military object detection and classification. 
 
 - The system ingests synchronized RGB and IR video streams and applies edge detection to the RGB stream and performs a lightweight fusion onto the IR feed. This enhances object contrast and detail, preparing the data for accurate classification with a single input.
 
@@ -183,15 +183,7 @@ iron-eye/
 
 ## Citation
 
-- Windows MCP
-```bibtex
-@software{
-  author       = {George, Jeomon},
-  title        = {Windows-MCP: Lightweight open-source project for integrating LLM agents with Windows},
-  year         = {2024},
-  publisher    = {GitHub},
-  url={https://github.com/CursorTouch/Windows-MCP}
-}
+- Windows MCP (https://github.com/CursorTouch/Windows-MCP)
 ```
 
 
