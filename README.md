@@ -53,6 +53,8 @@
 ### Dataset
 
 - Custom Dataset collected using War Thunder for simulation [Dataset Link](https://www.kaggle.com/datasets/iavinash/war-thunder-dataset)
+- Has around 1.7k images across 3 classes: 1. Tanks, 2. Smoke, 3. Ships \
+We plan on adding more classes and expanding our dataset (the quality is kind of bad since it was collected during a 24 hr hackathon
 
 
 ## Project Structure
